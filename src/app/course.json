@@ -1,0 +1,467 @@
+{
+  "title": "React For Beginners - Free Course by Itera",
+  "lessons": [
+    {
+      "name": "about",
+      "title": "About the course",
+      "type": "Lecture",
+      "published": true,
+      "links": [
+        ["YouTube", "https://www.youtube.com/channel/UCg-txtmOEQ8BniR8008O1mA"],
+        ["Telegram", "https://t.me/reactbeginners"],
+        ["GitHub", "https://github.com/Drag13/react-learning-course-short"],
+        ["LinkedIn", "https://www.linkedin.com/in/vitalii-ruban/"],
+        ["Twitter", "https://twitter.com/drag137"]
+      ],
+      "hidden": true
+    },
+    {
+      "name": "react-intro",
+      "title": "What is React",
+      "type": "Lecture",
+      "shortSummary": "Introduction to React.JS, the idea and JSX",
+      "keyPoints": [
+        "The problem",
+        "What is the React",
+        "Three pillars of React",
+        "React - advantages and disadvantages",
+        "Why to learn React nowadays"
+      ],
+      "takeaways": [
+        "React - JavaScript library for building user interfaces",
+        "React uses JSX - HTMLish syntax to describe UI",
+        "Data is the single source of truth"
+      ],
+      "published": true,
+      "links": [
+        ["Documentation", "https://reactjs.org/docs/getting-started.html"],
+        ["React - source code", "https://github.com/facebook/react"],
+        ["React changelog", "https://github.com/facebook/react/blob/main/CHANGELOG.md"],
+        [
+          "Why React is a bad idea",
+          "https://blog.devgenius.io/react-costs-companies-a-lot-of-money-6bfa3e5cc6f4"
+        ]
+      ],
+      "youtube": "https://youtu.be/fQ_UNyQBiqg"
+    },
+    {
+      "title": "A New Project With Create-React-App",
+      "name": "react-cra",
+      "type": "Workshop",
+      "keyPoints": [
+        "Starting new React project from scratch using create-react-app",
+        "Project structure",
+        "Files you need to know",
+        "Predefined commands",
+        "Code examples",
+        "Alternatives"
+      ],
+      "prerequisite": [
+        "Install <a href=\"https://nodejs.org/en/\">Node.JS</a>",
+        "Install <a href=\"https://code.visualstudio.com/\">VsCode</a>",
+        "Execute 'npx create-react-app my-test-app --template typescript'"
+      ],
+      "published": true,
+      "hometask": [
+        "Create new repository at <a href=\"https://github.io\">GitHub</a> and name it react-for-beginners-itera",
+        "Select .gitignore from VisualStudio",
+        "Clone repo locally using <i>git clone</i>",
+        "Initialize new react application using <i>npx create-react-app my-page --template typescript</i>",
+        "Create a new <a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON#example_json\">JSON</a> with next information:",
+        "First Name",
+        "Short biography",
+        "Public contacts",
+        "Use React to display data from the JSON on the page",
+        "Commit and push the results with <i>git add .</i>, <i>git commit -m \"Initial commit\"</i>, <i>git push</i>"
+      ],
+      "links": [
+        ["Create-React-App documentation", "https://create-react-app.dev/"],
+        ["Create a new react app", "https://reactjs.org/docs/create-a-new-react-app.html"],
+        [
+          "Package.json - documentation",
+          "https://docs.npmjs.com/cli/v7/configuring-npm/package-json"
+        ]
+      ],
+      "takeaways": [
+        "Creating new React project is very simple",
+        "Use npm start to start the an app locally or npm run build to build it for release"
+      ],
+      "youtube": "https://youtu.be/2r1TW9yPhlQ"
+    },
+    {
+      "name": "first-react-app-vite",
+      "published": false,
+      "title": "My first react app with Vite",
+      "youtube": "https://youtu.be/J_826v3GuCE",
+      "keyPoints": [
+        "How to create a new React app from scratch",
+        "Project structure",
+        "Code examples"
+      ]
+    },
+    {
+      "title": "What is React Component",
+      "name": "react-components",
+      "type": "Lecture",
+      "keyPoints": [
+        "What is the component",
+        "Why to use the components",
+        "Component types",
+        "How to pass data into the component",
+        "How to get data from the component",
+        "Component lifecycle"
+      ],
+      "links": [
+        ["Documentation", "https://reactjs.org/docs/react-component.html"],
+
+        [
+          "Smart VS Dumb components",
+          "https://medium.com/@thejasonfile/dumb-components-and-smart-components-e7b33a698d43"
+        ],
+        [
+          "Component LifeCycle",
+          "https://www.freecodecamp.org/news/how-to-understand-a-components-lifecycle-methods-in-reactjs-e1a609840630"
+        ]
+      ],
+      "published": true,
+      "hometask": [
+        "Split your APP into the logical components",
+        "Mix Class Based and Functional approach to get more practice in both",
+        "Use props only to pass the data to your components"
+      ],
+      "takeaways": [
+        "Component - an independent unit of code that encapsulate single, logical functionality",
+        "Components might be class based or functional",
+        "Components divided into \"smart\" and \"dumb\"",
+        "Components have lifecycle you can hook into"
+      ],
+      "youtube": "https://youtu.be/BPIeZqomYQw"
+    },
+    {
+      "title": "React and Props",
+      "name": "react-props",
+      "published": false,
+      "youtube": "https://youtu.be/1gLLa4fJ1JQ",
+      "takeaways": [
+        "What is props in React",
+        "How to pass data into component",
+        "How to take data from the component"
+      ]
+    },
+    {
+      "title": "React and Hooks",
+      "name": "react-hooks",
+      "type": "Lecture",
+      "keyPoints": [
+        "What is a hook",
+        "Hook rules",
+        "UseState",
+        "Use Effect",
+        "UseContext",
+        "Custom hooks"
+      ],
+      "youtube": "https://youtu.be/6AHDZGumKZg",
+      "links": [
+        ["Useful React Hooks", "https://www.smashingmagazine.com/2021/11/useful-react-hooks/"],
+        ["Hooks FAQ", "https://reactjs.org/docs/hooks-faq.html"],
+        ["Code samples", "https://github.com/Drag13/react-hooks-examples/tree/master/src"]
+      ],
+      "takeaways": [
+        "Hook - a modern to API to functional components",
+        "Most useful are useState, useEffect",
+        "You can write your own hooks"
+      ],
+      "published": true
+    },
+    {
+      "title": "Building React Component",
+      "name": "react-new-component",
+      "type": "Workshop",
+      "links": [
+        [
+          "Class-based MessageBlock example",
+          "https://github.com/Drag13/react-learning-course-short/blob/master/presentations/react-new-component/code/mb-class.tsx"
+        ],
+        [
+          "Functional MessageBlock example",
+          "https://github.com/Drag13/react-learning-course-short/blob/master/presentations/react-new-component/code/mb-functional.tsx"
+        ],
+        [
+          "Functional Counter example",
+          "https://github.com/Drag13/react-learning-course-short/blob/master/presentations/react-new-component/code/counter-functional.tsx"
+        ],
+        [
+          "Class-based Counter example",
+          "https://github.com/Drag13/react-learning-course-short/blob/master/presentations/react-new-component/code/counter-cb.tsx"
+        ]
+      ],
+
+      "keyPoints": [
+        "What is component - quick recap",
+        "Building \"dumb\" components - functional and class-based",
+        "Building \"smart\" component - functional and class-based",
+        "What and when to use",
+        "Components - best practices"
+      ],
+      "prerequisite": [
+        "Create new project using <a target=\"_blank\" href=\"https://drag13.io/react-learning-course-short/react-components/index.html\">example</a>"
+      ],
+      "published": true,
+      "hometask": [
+        "Add footer to your application",
+        "Split the application you've built previously into components",
+        "Create a component named `<AppLink>` which will render `a`. Component should:",
+        "Be typed",
+        "Accept custom text",
+        "Accept custom url",
+        "Accept callback that should be invoked before the click",
+        "Put the new component into the footer",
+        "When clicked, it should log into the console next text: `redirecting user to the next {link}` where `{link}` should be a's href"
+      ]
+    },
+    {
+      "title": "React - From CSS to CSSinJS",
+      "name": "react-styling",
+      "type": "Lecture",
+      "keyPoints": ["Default way", "Using CSS modules", "Preprocessors", "CSS in JS"],
+      "published": true,
+      "links": [
+        ["Css Modules", "https://css-tricks.com/css-modules-part-1-need/"],
+        ["Sass - css with superpowers", "https://sass-lang.com/"],
+        ["How to add SASS to React", "https://create-react-app.dev/docs/adding-a-sass-stylesheet/"],
+        ["Styled Components", "https://styled-components.com/docs/basics#getting-started"],
+        [
+          "Styled Components extension",
+          "https://marketplace.visualstudio.com/items?itemName=styled-components.vscode-styled-components"
+        ]
+      ],
+      "youtube": "https://www.youtube.com/watch?v=8al4xMhWWCE",
+      "hometask": ["Use CSS modules to style previously created application"]
+    },
+    {
+      "title": "Tracking Changes",
+      "name": "react-change-detection",
+      "type": "Lecture",
+      "keyPoints": [
+        "What is change detection",
+        "Implicit change detection with Angular",
+        "Explicit change detection with React",
+        "How it works in React (simplified)",
+        "Typical mistakes"
+      ],
+      "links": [
+        ["State in React", "https://reactjs.org/docs/faq-state.html"],
+        ["Using the State Hook", "https://reactjs.org/docs/hooks-state.html"],
+        ["Angular vs React - Change detection", "https://morioh.com/p/caccd1b76c5c"]
+      ],
+      "published": true,
+      "hidden": true
+    },
+    {
+      "title": "Managing State in React",
+      "name": "react-state-management",
+      "type": "Workshop",
+      "keyPoints": ["Problems with setState and useState", "Context", "Redux", "MobX"],
+      "prerequisite": [
+        "Copy the <a href=\"https://raw.githubusercontent.com/Drag13/react-learning-course-short/master/presentations/react-state-management/code/index_general.tsx\">code</a> to your project",
+        "Install MobX - <i>npm i mobx mobx-react-lite</i>"
+      ],
+      "links": [
+        ["Context", "https://reactjs.org/docs/context.html"],
+        ["Redux", "https://redux.js.org/"],
+        [
+          "You might not need Redux",
+          "https://medium.com/@dan_abramov/you-might-not-need-redux-be46360cf367"
+        ],
+        ["Redux Toolkit", "https://reduxtoolkit.js.org/"],
+        ["MobX", "https://mobx.js.org/react-integration.html"]
+      ],
+      "hometask": [
+        "Using context write the timer that will have two buttons",
+        "start and stop",
+        "Timer should:",
+        "Be stopped by default",
+        "On start, App should display time in format HH:MM:SS",
+        "On start page title should be changed to \"Timer is running\"",
+        "On stop timer should be stopped, the latest value should be present",
+        "Page title should be returned back to normal",
+        "Install MobX",
+        "Implement same functionality with MobX"
+      ],
+      "published": true,
+      "youtube": "https://youtu.be/2KTqbf31cLw"
+    },
+    {
+      "title": "Forms - Default Way and React-Hook-Forms",
+      "published": true,
+      "name": "react-forms",
+      "type": "Workshop",
+      "keyPoints": [
+        "React Forms - default way",
+        "Building your first form with  <a href=\"https://react-hook-form.com/get-started\">React Hook Form</a>",
+        "Validation with Yup"
+      ],
+      "prerequisite": [
+        "Install <a href=\"https://react-hook-form.com/get-started\">React Hook Form</a> before the workshop"
+      ],
+      "links": [
+        ["React forms - default way", "https://reactjs.org/docs/forms.html"],
+        ["React Hook Form", "https://react-hook-form.com/get-started"],
+        ["Yup", "https://github.com/jquense/yup"]
+      ],
+      "youtube": "https://youtu.be/gwrMDwYLIWs"
+    },
+    {
+      "title": "Routing in React",
+      "name": "react-router",
+      "type": "Lecture",
+      "keyPoints": [
+        "A cup of theory",
+        "Install react router",
+        "Basic setup",
+        "Data Binding",
+        "Router guard"
+      ],
+      "links": [["React Router", "https://reactrouter.com/docs/en/v6/getting-started/overview"]],
+      "hometask": [
+        "Add header for your application",
+        "Create new page named `about`",
+        "Move all content related yourself to the page about",
+        "Add new query parameter named `ln` to your link like this: `https://8080?ln=ua`",
+        "If `ln` equals `ua` all texts should be in Ukrainian language",
+        "If `ln` equals `en` all text should be in English (feel free to use google translate if needed)"
+      ],
+      "published": true,
+      "takeaways": [
+        "SPA - is a web application or website that interacts with the user by dynamically rewriting the current web page with new data",
+        "In React we are using React Router to build SPA",
+        "React router supports a lot of handy options - params, nested view, default routes"
+      ],
+      "youtube": "https://youtu.be/D0Fkm63FoSY"
+    },
+    {
+      "title": "React and Network",
+      "name": "react-network",
+      "type": "Lecture",
+      "keyPoints": ["Fetch", "Axios", "Network and store", "Typical mistakes"],
+      "published": true,
+      "links": [
+        ["Fetch", "https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API"],
+        ["Axios", "https://github.com/axios/axios"],
+        ["Public API", "https://github.com/public-apis/public-apis"]
+      ],
+      "takeaways": [
+        "Use fetch for a simple project and axios for middle/large",
+        "Move logic out of component",
+        "Don't ignore errors"
+      ],
+      "youtube": "https://youtu.be/Tm6l612v2v0"
+    },
+
+    {
+      "title": "UI Libraries",
+      "name": "react-ui-lib",
+      "published": true,
+      "links": [
+        ["Material", "https://github.com/mui/material-ui"],
+        ["Ant Design", "https://github.com/ant-design/ant-design/"],
+        ["React Bootstrap", "https://github.com/react-bootstrap/react-bootstrap"],
+        ["Bundlephobia", "https://bundlephobia.com/"]
+      ],
+      "type": "Lecture",
+      "keyPoints": ["Purpose", "Cons", "How to choose", "Material UI"],
+      "youtube": "https://youtu.be/4Dsgzk-GuX8"
+    },
+    {
+      "title": "Testing Your Code",
+      "name": "react-testing",
+      "type": "Lecture",
+      "keyPoints": ["Why test", "Testing pyramid", "What should be tested", "Testing with Jest"],
+      "published": true,
+      "links": [
+        ["Testing Recipes", "https://reactjs.org/docs/testing-recipes.html"],
+        ["Create-React-App - testing", "https://create-react-app.dev/docs/running-tests/"],
+        ["Jest", "https://jestjs.io/"],
+        ["React Testing Library", "https://testing-library.com/docs/react-testing-library/intro/"]
+      ],
+      "youtube": "https://youtu.be/ASI73nQ9zP8"
+    },
+    {
+      "title": "TypeScript For Beginners",
+      "name": "typescript-intro",
+      "type": "Lecture",
+      "keyPoints": ["Primitives", "Functions", "CustomTypes", "Generics", "TypeAssertions"],
+      "links": [
+        ["TS Playground", "https://www.typescriptlang.org/play"],
+        ["TS Handbook", "https://www.typescriptlang.org/docs/handbook/intro.html"],
+        ["TS Roadmap", "https://github.com/microsoft/TypeScript/wiki/Roadmap"],
+        [
+          "tsconfig - documentation",
+          "https://www.typescriptlang.org/docs/handbook/tsconfig-json.html"
+        ]
+      ],
+      "takeaways": [
+        "TypeScript - almost the same JavaScript but with built time type checking",
+        "In a nutshell, TypeScript is pretty easy"
+      ],
+      "published": true,
+      "youtube": "https://youtu.be/ND-XaEQ4VSk"
+    },
+    {
+      "title": "How to: Pet Project",
+      "hidden": true,
+      "name": "pet-project",
+      "published": false,
+      "type": "Workshop",
+      "keyPoints": [
+        "What is a Pet Project",
+        "Hot to pick a theme",
+        "Planing",
+        "Time management tips",
+        "Pitfalls"
+      ],
+      "takeaways": [
+        "Pet project is a great thing, but it requires efforts from your side",
+        "Pet project = release",
+        "For the first project - not more than 16 hours of work",
+        "For the first release - only must have features",
+        "Plan to work day by day"
+      ]
+    },
+    {
+      "name": "web-tools",
+      "title": "Useful tools for the web developer",
+      "keyPoints": ["EsLint", "Prettier", "Husky and Lint Staged", "Emmet", "Code Snippets"],
+      "type": "Lecture",
+      "published": true,
+      "links": [
+        ["EsLint", "https://eslint.org/docs/latest/rules/"],
+        ["Prettier", "https://prettier.io/"],
+        ["Husky and lint-staged", "https://laurieontech.com/posts/husky/"],
+        ["Emmet", "https://docs.emmet.io/abbreviations/syntax/"],
+        ["Code Snippets", "https://code.visualstudio.com/docs/editor/userdefinedsnippets"]
+      ]
+    },
+    {
+      "name": "solid",
+      "title": "SOLID & React",
+      "keyPoints": [
+        "Single Responsibility Principle",
+        "Open Closed Principle",
+        "Liskov Substitution Principle",
+        "Interface Segregation Principle",
+        "Dependency inversion Principle"
+      ],
+      "takeaways": [
+        "Keep your code simple",
+        "Don't hardcode",
+        "Don't change to the code unpredictable",
+        "Ask only needed",
+        "Don't hardcode (yea, again)"
+      ],
+      "published": true,
+      "youtube": "https://youtube.com/live/1D80PMHEBa0",
+      "type": "Lecture"
+    }
+  ]
+}
