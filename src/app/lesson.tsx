@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import styles from './lesson.module.css';
 
 type LessonProps = {
   title: string;
@@ -13,7 +14,7 @@ export function Lesson({ title, shortSummary }: LessonProps) {
   const setLike = () => setLikeState('Liked');
   return (
     <div>
-      <h2>
+      <h2 className={styles.header}>
         {title}{' '}
         <button type="button" onClick={setLike}>
           {likeState === 'unset' ? 'like' : likeState}
