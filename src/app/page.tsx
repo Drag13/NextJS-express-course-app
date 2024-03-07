@@ -1,26 +1,42 @@
-import course from './course.json';
-import { Lesson } from './lesson';
+import { getAllArticles } from './(server)/api';
+import { AppLink } from './shared/components/app-link';
+import { ArticlePreview } from './ArticlePreview';
 
-async function getAllCourses(): Promise<typeof course> {
-  return new Promise((resolve) => {
-    setTimeout(() => resolve(course), 1000);
-  });
-}
+const ARTICLES_PER_PAGE = 10;
 
-export default async function Home() {
-  const courses = await getAllCourses();
+export default async function Home({
+  searchParams,
+}: {
+  searchParams: Record<string, string>;
+}) {
+  const page = Number.parseInt(searchParams['page'] ?? 1);
+  const allArticles = await getAllArticles();
+
+  const articles = allArticles.slice(
+    (page - 1) * ARTICLES_PER_PAGE,
+    page * ARTICLES_PER_PAGE
+  );
+
+  const nextPageUrl = {
+    search: new URLSearchParams({
+      page: (page + 1).toString(),
+    }).toString(),
+  };
+
   return (
-    <main>
+    <>
+      <h1>Drag13 blog, page {page}</h1>
       <ul>
-        <h2>React</h2>
-        {courses.lessons.map((lesson) => {
-          return (
-            <li key={lesson.name}>
-              <Lesson title={lesson.title} shortSummary={lesson.shortSummary} />
-            </li>
-          );
-        })}
+        {articles.map((article) => (
+          <li key={article.name}>
+            <ArticlePreview name={article.name} text={article.header} />
+          </li>
+        ))}
       </ul>
-    </main>
+
+      <AppLink href={nextPageUrl}>Next</AppLink>
+    </>
   );
 }
+
+
